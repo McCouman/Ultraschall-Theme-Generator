@@ -28,15 +28,15 @@ class Create_Icons {
         {
             $title = 'Zoom';
         }
-        elseif ( $icons == "rippleon" )
+        elseif ( $icons == "rippleone" )
         {
-            $title = 'Ripple On';
+            $title = 'Ripple One';
         }
         elseif ( $icons == "rippleall" )
         {
             $title = 'Ripple All';
         }
-        elseif ( $icons == "marker" )
+        elseif ( $icons == "Marker" )
         {
             $title = 'Marker Chapter';
         }
@@ -44,13 +44,13 @@ class Create_Icons {
         {
             $title = 'Marker Edit';
         }
-        elseif ( $icons == "cut" )
+        elseif ( $icons == "Cut" )
         {
             $title = 'Cut';
         }
-        elseif ( $icons == "remove" )
+        elseif ( $icons == "cut_selection" )
         {
-            $title = 'Remove';
+            $title = 'Cut Selection';
         }
         elseif ( $icons == "mute" )
         {

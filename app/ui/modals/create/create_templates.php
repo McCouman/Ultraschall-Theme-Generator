@@ -89,7 +89,7 @@ class Create_Templates {
             // icons daten kopieren
             $this->copy_set( 'bier', $path, 'icons' );
             $this->copy_set( 'chapters', $path, 'icons' );
-            $this->copy_set( 'cut', $path, 'icons' );
+            $this->copy_set( 'Cut', $path, 'icons' );
             $this->copy_set( 'export', $path, 'icons' );
             $this->copy_set( 'fade', $path, 'icons' );
             $this->copy_set( 'folder', $path, 'icons' );
@@ -97,14 +97,15 @@ class Create_Templates {
             $this->copy_set( 'idee', $path, 'icons' );
             $this->copy_set( 'labels', $path, 'icons' );
             $this->copy_set( 'link', $path, 'icons' );
-            $this->copy_set( 'marker', $path, 'icons' );
+            $this->copy_set( 'Marker', $path, 'icons' );
             $this->copy_set( 'mic', $path, 'icons' );
             $this->copy_set( 'music', $path, 'icons' );
             $this->copy_set( 'mute', $path, 'icons' );
             $this->copy_set( 'newitem', $path, 'icons' );
             $this->copy_set( 'newregion', $path, 'icons' );
-            $this->copy_set( 'remove', $path, 'icons' );
-            $this->copy_set( 'rippleon', $path, 'icons' );
+            $this->copy_set( 'cut_selection', $path, 'icons' );
+            $this->copy_set( 'rippleall', $path, 'icons' );
+            $this->copy_set( 'rippleone', $path, 'icons' );
             $this->copy_set( 'tape', $path, 'icons' );
             $this->copy_set( 'trim', $path, 'icons' );
             $this->copy_set( 'txt2', $path, 'icons' );
@@ -114,7 +115,7 @@ class Create_Templates {
             // generated daten kopieren
             $this->copy_set( 'bier', $path, 'generated' );
             $this->copy_set( 'chapters', $path, 'generated' );
-            $this->copy_set( 'cut', $path, 'generated' );
+            $this->copy_set( 'Cut', $path, 'generated' );
             $this->copy_set( 'export', $path, 'generated' );
             $this->copy_set( 'fade', $path, 'generated' );
             $this->copy_set( 'folder', $path, 'generated' );
@@ -122,14 +123,15 @@ class Create_Templates {
             $this->copy_set( 'idee', $path, 'generated' );
             $this->copy_set( 'labels', $path, 'generated' );
             $this->copy_set( 'link', $path, 'generated' );
-            $this->copy_set( 'marker', $path, 'generated' );
+            $this->copy_set( 'Marker', $path, 'generated' );
             $this->copy_set( 'mic', $path, 'generated' );
             $this->copy_set( 'music', $path, 'generated' );
             $this->copy_set( 'mute', $path, 'generated' );
             $this->copy_set( 'newitem', $path, 'generated' );
             $this->copy_set( 'newregion', $path, 'generated' );
-            $this->copy_set( 'remove', $path, 'generated' );
-            $this->copy_set( 'rippleon', $path, 'generated' );
+            $this->copy_set( 'cut_selection', $path, 'generated' );
+            $this->copy_set( 'rippleall', $path, 'generated' );
+            $this->copy_set( 'rippleone', $path, 'generated' );
             $this->copy_set( 'tape', $path, 'generated' );
             $this->copy_set( 'trim', $path, 'generated' );
             $this->copy_set( 'txt2', $path, 'generated' );
@@ -147,23 +149,22 @@ class Create_Templates {
      */
     function copy_set( $fileName, $path, $type = 'setup' ) {
         $prefix = '';
-        $folder = '';
         if ( $type == "icons" )
         {
-            $folder = $type;
             $prefix = $type . '_';
+            $copyfile =  $fileName;
         }
         elseif ( $type == "setup" )
         {
-            $folder = $type;
             $prefix = $type . '_';
+            $copyfile =  $fileName;
         }
         elseif ( $type == "generated" )
         {
-            $folder = "icons";
             $prefix = 'toolbar_';
+            $copyfile = 'all';
         }
-        $copyFrom = 'app/ui/assets/standard/' . $folder . '/' . $fileName . '.png';
+        $copyFrom = 'app/ui/assets/standard/' . $type . '/' . $copyfile . '.png';
         $saveFile = $path . '/' . $type . '/' . $prefix . $fileName . '.png';
         if ( ! copy( $copyFrom, $saveFile ) )
         {

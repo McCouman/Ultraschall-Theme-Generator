@@ -78,6 +78,8 @@ class Upload_Icons {
         $this->create_UltraschallIcon( $setImage, $iconImage, $template );
     }
 
+    //---
+
     /**
      * Helper function: Datenset und Bestimmungen für merge der Icons.
      *
@@ -104,12 +106,12 @@ class Upload_Icons {
             $setup = $tS;
         }
         //topLeft
-        elseif ( $icons == "rippleon" or $icons == "marker" or $icons == "cut" )
+        elseif ( $icons == "rippleone" or $icons == "Marker" or $icons == "Cut" )
         {
             $setup = $tL;
         }
         //topMiddle
-        elseif ( $icons == "remove" )
+        elseif ( $icons == "cut_selection" )
         {
             $setup = $tM;
         }
@@ -162,6 +164,20 @@ class Upload_Icons {
         imagecopy( $cut, $dst_im, 0, 0, $dst_x, $dst_y, $src_w, $src_h );
         imagecopy( $cut, $src_im, 0, 0, $src_x, $src_y, $src_w, $src_h );
         imagecopymerge( $dst_im, $cut, $dst_x, $dst_y, 0, 0, $src_w, $src_h, $pct );
+    }
+
+    /**
+     * Update: Ultraschall Icon
+     *
+     * @param $f3
+     * @param $param
+     */
+    function updateNewIconItem( $f3, $param ) {
+        $template = $param[ 'templ' ];
+        $icon = $param[ 'icon' ];
+        // aktualisiere Ultraschall Icon
+        $this->generate_icons( $template, $icon );
+        header( "location: /template/" . $template . '/icons/' . $icon . '/create' );
     }
 
 }
