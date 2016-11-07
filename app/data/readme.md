@@ -1,9 +1,6 @@
 # Ultraschall Theme Generator
 
-Eine kleine Unterstützung zum erstellen und generieren eines eigenen Reaper - Ultraschall Themes. 
-
 Aktuelle Version 0.5.52 Alpha 
-
 
 ## Zum Projekt
 
@@ -138,5 +135,4 @@ Hier bekommt man Informationen zum Stand der Versionen und Hintergrundinformatio
 Developed by Michael "M.C." McCouman Jr.
 
 2016 07.11 - Germany
-
 

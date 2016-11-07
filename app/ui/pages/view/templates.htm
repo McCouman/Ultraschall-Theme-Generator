@@ -1,0 +1,75 @@
+<section class="utg-template-list">
+    <h2>Templates</h2>
+
+    <div class="uk-grid">
+        <div class="uk-width-2-3">
+            <div class="uk-panel uk-panel-box">
+                <form class="uk-form" action="/template/create" method="post">
+                    <fieldset data-uk-margin>
+                        <p>Create a new template</p>
+
+                        <div class="uk-grid">
+                            <div class="uk-width-8-10">
+                                <input type="text"
+                                       class="uk-width-1-1 uk-form-large"
+                                       placeholder="Dark Night"
+                                       name="templ">
+                            </div>
+                            <div class="uk-width-2-10">
+                                <button class="uk-button uk-button-large uk-width-1-1 uk-button-primary">Create</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="uk-panel">
+                <p><b>All Templates</b></p>
+
+                <?php
+
+                    echo View::instance()->raw($folder);
+
+                ?>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .utg-template-list h3 {
+        margin: 0;
+        padding: 5px;
+        color: #2d2d2d;
+    }
+
+    .utg-template-list h3 i {
+        color: #898989;
+    }
+
+    .utg-template-list .uk-icon-th,
+    .utg-template-list .uk-icon-picture-o,
+    .utg-template-list .uk-icon-cloud-download {
+        background: #00a8e6;
+        color: #fff;
+    }
+
+    .utg-template-list .uk-icon-th:hover,
+    .utg-template-list .uk-icon-picture-o:hover,
+    .utg-template-list .uk-icon-cloud-download:hover {
+        background: #0091cd;
+        color: #fff;
+    }
+
+    .utg-template-list .uk-icon-close {
+        background: #e65044;
+        color: #fff;
+    }
+
+    .utg-template-list .uk-icon-close:hover {
+        background: #f42b20;
+        color: #fff;
+    }
+
+    .utg-template-list .uk-panel a {
+        padding-right: 12px;
+    }
+</style>
