@@ -1,5 +1,4 @@
 <?php
-
 /*
 
 	Copyright (c) 2009-2015 F3::Factory/Bong Cosca, All rights reserved.
