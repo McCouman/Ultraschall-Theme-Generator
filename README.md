@@ -40,13 +40,12 @@ empfiehlt es sich, die zum download bereitgestellte Photoshop Datei mit angaben 
 
 <img src="https://raw.githubusercontent.com/McCouman/Ultraschall-Theme-Generator/master/screenshot2.png">
 
-Nach dem fertigstellen und hochladen (über Fileupload oder per Drag & Drop) erstellt UTG, automatisch eine fertiges 
-Ultraschall-Icon, aus den vorliegenden Hintergrund-Set und dem eben hochgeladenen Icon. Über die Vorschau Box (in blau) 
-wird das eben hochgeladene Icon angezeigt. Wurden noch keine Uploads erzeigt, wird dabei das Standard-Icon von 
-Ultrachall angezeigt. 
+Nach dem fertigstellen und hochladen (über Fileupload oder per Drag & Drop) erstellt UTG automatisch ein fertiges 
+Ultraschall-Icon, aus den vorliegenden Hintergrund-Set und dem neu hochgeladenen Icon. Über die Vorschau Box (in blau) 
+wird das eben verarbeitete Icon angezeigt. Wurden noch keine Uploads erzeugt, wird das "Standard-Icon" von 
+Ultrachall dafür angezeigt. 
 
-Ist ein Upload erfolgt wird automatisch das neue Ultraschall-Button-Icon erzeigt und in der Vorschaubox (grün) 
-angezeigt. Über die Buttons "Zurücksetzen" werden die eben hochgeladenen Daten, mit den Standard-Icons überschrieben.
+Ist ein Upload erfolgt, wird automatisch im Hintergrund das neue "Ultraschall-Button-Icon" erzeugt und in der Vorschaubox (grün) angezeigt. Über die Buttons "Zurücksetzen" werden hochgeladenen Daten mit den Standard-Icons wieder überschrieben.
 
 ## Letzte Version (0.5.52 Alpha)
 
