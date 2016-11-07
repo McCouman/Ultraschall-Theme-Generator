@@ -73,7 +73,7 @@ In dieser Version ist es möglich die Toolbar-Icons zum Editieren von Audio anzu
 Bei der Erstellung eines Templates werden automatisch die drei Ordner "icons", "setup", "generated" unter dem 
 Templates Ordner angelegt. Dabei wird auch eine ReaperTheme datei erzeugt.
 
-**Funktionen:**
+Funktionen:
 
 - create template, 
 - delete template, 
@@ -85,7 +85,7 @@ Templates Ordner angelegt. Dabei wird auch eine ReaperTheme datei erzeugt.
 
 Siehe auch "Zu den Seiten"
 
-**Funktionen:**
+Funktionen:
 
 - view standard set item,
 - view uploaded set item, 
@@ -97,7 +97,7 @@ Siehe auch "Zu den Seiten"
 
 Siehe auch "Zu den Seiten"
 
-**Funktionen:**
+Funktionen:
 
 - view standard icon,
 - view uploaded icon, 
@@ -111,28 +111,28 @@ Siehe auch "Zu den Seiten"
 
 Hier bekommt man Informationen zum Stand der Versionen und Hintergrundinformationen zum Projekt und seiner Funktionen.
 
-**Funktionen:**
+Funktionen:
 
 - read markdown
 - view: readme.md file
 
 #### **Functions: Upload**
 
-**Funktionen:**
+Funktionen:
 
 - upload background button set,
 - upload button icons, 
 
 #### **Functions: Zip Download**
 
-**Funktionen:**
+Funktionen:
 
 - generate zip file from templates
 - generate download link 
 
 #### **Functions: Image Merge**
 
-**Funktionen:**
+Funktionen:
 
 - checked possition background set
 - merged background set and button icons to utltraschall
