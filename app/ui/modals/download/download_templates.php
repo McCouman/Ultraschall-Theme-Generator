@@ -55,17 +55,5 @@ class Download_Templates {
         }
 
         header( "location: " . '/template/' . $file . '/download/load' );
-
-        /*
-        // Und zum entpacken:
-        $destinationPath = realpath( 'tmp/' );
-        $archiv = new ZipArchive();
-        $archiv->open( 'archiv.zip' );
-
-
-        // In Ordner entpacken
-        $archiv->extractTo( $destinationPath );
-        */
     }
-
 }
