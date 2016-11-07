@@ -22,6 +22,8 @@ So entsteht ein automatisch generiertes und fertige Button-Icon zum einsetzen in
 
 Über die Templates Seite können Vorlagen angelegt, gelöscht oder ein Theme-Set heruntergeladen werden.
 
+<img src="https://raw.githubusercontent.com/McCouman/Ultraschall-Theme-Generator/master/screenshot1.png">
+
 #### 2. Das Hintergrund Bild-Setup (Set)
 
 Über die Seite "Set" werden die 4 Positions-Icon als Hintergründe angezeigt. 
@@ -35,6 +37,8 @@ Um ein Icon zu ändern wird verfahren, wie beim Upload der Hintergründe. Um neu
 empfiehlt es sich, die zum download bereitgestellte Photoshop Datei mit angaben zu den Maßen herunter zu laden. 
 
 **INFO: Es ist wichtig das bei den Icons darauf geachtet wird, das ein transparenter Hintergdrund genutzt wird!**
+
+<img src="https://raw.githubusercontent.com/McCouman/Ultraschall-Theme-Generator/master/screenshot2.png">
 
 Nach dem fertigstellen und hochladen (über Fileupload oder per Drag & Drop) erstellt UTG, automatisch eine fertiges 
 Ultraschall-Icon, aus den vorliegenden Hintergrund-Set und dem eben hochgeladenen Icon. Über die Vorschau Box (in blau) 
